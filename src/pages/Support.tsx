@@ -1,8 +1,8 @@
-import { useEffect } from "react";
+import { ReactNode, useEffect } from "react";
 
 const SUPPORT_EMAIL = "app.minilab@gmail.com";
 
-const faqs = [
+const faqs: { q: string; a: ReactNode }[] = [
   {
     q: "What is MiniLab?",
     a: "MiniLab is a personal experiment and reflection app. It helps you create small experiments, log daily notes and moods, and review gentle summaries over time.",
@@ -21,7 +21,14 @@ const faqs = [
   },
   {
     q: "How do I report a bug or request a feature?",
-    a: `Please email ${SUPPORT_EMAIL} with your device model, iOS version, app version, and a short description of the issue or request.`,
+    a: (
+      <>
+        Please email{" "}
+        <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a> with your device
+        model, iOS version, app version, and a short description of the issue
+        or request.
+      </>
+    ),
   },
 ];
 

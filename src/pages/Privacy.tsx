@@ -82,8 +82,8 @@ export default function Privacy() {
       <p>
         MiniLab is not directed to children under the age of 13, and the
         current version does not knowingly collect personal information from
-        children. If you believe a child has provided information through the
-        app, please contact us so we can address it.
+        children. If you believe a child has contacted us or provided personal
+        information to us, please contact us so we can address it.
       </p>
 
       <h2>9. Changes to This Policy</h2>
